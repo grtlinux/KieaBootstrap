@@ -27,13 +27,32 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		
 		registry.addViewController("/03_buttons/").setViewName("03_buttons/home");
 		
+		
+		
+		
+		
 		registry.addViewController("/04_forms/").setViewName("04_forms/home");
+		
 		registry.addViewController("/04_forms/Login").setViewName("04_forms/Login");
+		
 		registry.addViewController("/04_forms/Form_ClearInputField").setViewName("04_forms/Form_ClearInputField");
+		
 		registry.addViewController("/04_forms/Form_CopyToClipboard1").setViewName("04_forms/Form_CopyToClipboard1");
 		registry.addViewController("/04_forms/Form_CopyToClipboard2").setViewName("04_forms/Form_CopyToClipboard2");
+		
 		registry.addViewController("/04_forms/Form_CustomCheckbox").setViewName("04_forms/Form_CustomCheckbox");
 		registry.addViewController("/04_forms/Form_CustomRadio").setViewName("04_forms/Form_CustomRadio");
+		
+		registry.addViewController("/04_forms/Form_SelectDefault").setViewName("04_forms/Form_SelectDefault");
+		registry.addViewController("/04_forms/Form_SelectCustom").setViewName("04_forms/Form_SelectCustom");
+
+		registry.addViewController("/04_forms/Form_Autocomplete").setViewName("04_forms/Form_Autocomplete");
+		
+		
+		
+		
+		
+		
 		
 		registry.addViewController("/05_filters/").setViewName("05_filters/home");
 		
