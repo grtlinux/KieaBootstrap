@@ -15,12 +15,22 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		registry.addViewController("/01_menus/").setViewName("01_menus/home");
 		registry.addViewController("/01_menus/Icon_BarH").setViewName("01_menus/Icon_BarH");
 		registry.addViewController("/01_menus/Icon_BarV").setViewName("01_menus/Icon_BarV");
+		registry.addViewController("/01_menus/Menu_Icon").setViewName("01_menus/Menu_Icon");
+		registry.addViewController("/01_menus/Menu_Icon_Animated").setViewName("01_menus/Menu_Icon_Animated");
+		registry.addViewController("/01_menus/Accordion").setViewName("01_menus/Accordion");
+		registry.addViewController("/01_menus/Tabs").setViewName("01_menus/Tabs");
+		registry.addViewController("/01_menus/Tabs_CloseTab").setViewName("01_menus/Tabs_CloseTab");
+		registry.addViewController("/01_menus/Tabs_ShowDefault").setViewName("01_menus/Tabs_ShowDefault");
+		registry.addViewController("/01_menus/Tabs_Fade").setViewName("01_menus/Tabs_Fade");
 		
 		registry.addViewController("/02_images/").setViewName("02_images/home");
 		
 		registry.addViewController("/03_buttons/").setViewName("03_buttons/home");
 		
 		registry.addViewController("/04_forms/").setViewName("04_forms/home");
+		registry.addViewController("/04_forms/Login").setViewName("04_forms/Login");
+		registry.addViewController("/04_forms/Form_CustomCheckbox").setViewName("04_forms/Form_CustomCheckbox");
+		registry.addViewController("/04_forms/Form_CustomRadio").setViewName("04_forms/Form_CustomRadio");
 		
 		registry.addViewController("/05_filters/").setViewName("05_filters/home");
 		
