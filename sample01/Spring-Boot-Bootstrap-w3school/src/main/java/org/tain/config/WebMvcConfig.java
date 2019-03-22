@@ -22,6 +22,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		registry.addViewController("/01_menus/Tabs_CloseTab").setViewName("01_menus/Tabs_CloseTab");
 		registry.addViewController("/01_menus/Tabs_ShowDefault").setViewName("01_menus/Tabs_ShowDefault");
 		registry.addViewController("/01_menus/Tabs_Fade").setViewName("01_menus/Tabs_Fade");
+		registry.addViewController("/01_menus/Tabs_Toggleable").setViewName("01_menus/Tabs_Toggleable");
 		
 		registry.addViewController("/02_images/").setViewName("02_images/home");
 		
@@ -47,6 +48,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		registry.addViewController("/04_forms/Form_SelectCustom").setViewName("04_forms/Form_SelectCustom");
 
 		registry.addViewController("/04_forms/Form_Autocomplete").setViewName("04_forms/Form_Autocomplete");
+
+		registry.addViewController("/04_forms/Form_Validation").setViewName("04_forms/Form_Validation");
 		
 		
 		
