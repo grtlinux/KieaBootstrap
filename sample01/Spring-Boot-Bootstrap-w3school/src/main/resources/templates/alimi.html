@@ -17,8 +17,8 @@
 			border: none;
 			outline: none;
 			color: white;
-			padding: 14px 28px;
-			font-size: 16px;
+			padding: 5px 10px;
+			font-size: 12px;
 			cursor: pointer;
 		}
 		.success { background-color: #4CAF50; }  /* Green */
@@ -35,7 +35,7 @@
 
 		.default {background-color: #e7e7e7; color: black;} /* Gray */ 
 		.default:hover {background: #ddd;}
-		
+		/*
 		.dropdown {
 			position: absolute;
 			display: inline-block;
@@ -62,6 +62,7 @@
 		.btn:hover, .dropdown:hover .btn {
 			background-color: #0b7dda;
 		}
+		*/
 	</style>
 </head>
 <body>
@@ -86,6 +87,9 @@
 		<div class="tab-content">
 <!-- (구)알리미 등록창 -->
 			<div id="oldAlimi" class="container-fluid tab-pane active"><br>
+				<div>
+					<h6>* 캠페인 기본</h6>
+				</div>
 				<div class="visible">
 					<table border="1" class="table table-responsive-sm">
 						<tr>
@@ -105,6 +109,9 @@
 							</td>
 						</tr>
 					</table>
+				</div>
+				<div>
+					<h6>* 캠페인 내용</h6>
 				</div>
 				<div class="visible">
 					<table border="1" class="table table-responsive-sm">
@@ -277,12 +284,25 @@
 					</div>
 					<div id="images">
 						<div>
-							<h6>* 이미지내용(Images)</h6>
+							<h6>* 이미지내용(Images)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>항목추가</button>&nbsp;<button>Reset</button></h6>
 						</div>
 						<div>
 							<table border="1" class="table table-responsive-sm">
 								<tr>
-									<td width="20%">이미지 URL 1</td>
+									<td width="20%">
+										이미지 URL 1
+										<div class="dropdown float-right">
+											<button type="button" class="btn btn-primary dropdown-toggle" style="height:20px;width:50px;padding:2px;" data-toggle="dropdown">
+												Opt
+											</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item" href="#">Delete</a>
+												<a class="dropdown-item" href="#">Up</a>
+												<a class="dropdown-item" href="#">Down</a>
+												<a class="dropdown-item" href="#">Clear</a>
+											</div>
+										</div>
+									</td>
 									<td colspan="4">
 										<input type="text" name="fld00">
 									</td>
@@ -356,12 +376,25 @@
 					</div>
 					<div id="images">
 						<div>
-							<h6>* 이미지내용(Images)</h6>
+							<h6>* 이미지내용(Images)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>항목추가</button>&nbsp;<button>Reset</button></h6>
 						</div>
 						<div>
 							<table border="1" class="table table-responsive-sm">
 								<tr>
-									<td width="20%">이미지 URL 1</td>
+									<td width="20%">
+										이미지 URL 1
+										<div class="dropdown float-right">
+											<button type="button" class="btn btn-primary dropdown-toggle" style="height:20px;width:50px;padding:2px;" data-toggle="dropdown">
+												Opt
+											</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item" href="#">Delete</a>
+												<a class="dropdown-item" href="#">Up</a>
+												<a class="dropdown-item" href="#">Down</a>
+												<a class="dropdown-item" href="#">Clear</a>
+											</div>
+										</div>
+									</td>
 									<td colspan="4">
 										<input type="text" name="fld00">
 									</td>
@@ -371,23 +404,22 @@
 					</div>
 					<div id="goods">
 						<div>
-							<h6>* 상품내용(Goods)&nbsp;<button>항목추가</button>&nbsp;<button>Reset</button></h6>
+							<h6>* 상품내용(Goods)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>항목추가</button>&nbsp;<button>Reset</button></h6>
 						</div>
 						<div>
 							<table border="1" class="table table-responsive-sm">
 								<tr>
 									<td width="20%" rowspan="5">
 										상품 1
-										<button class="btn">button</button>
-										<div class="dropdown">
-											<button class="btn" style="border-left:1px solid #0d8bf2">
-												<i class="fa fa-caret-down"></i>
+										<div class="dropdown float-right">
+											<button type="button" class="btn btn-primary dropdown-toggle" style="height:20px;width:50px;padding:2px;" data-toggle="dropdown">
+												Opt
 											</button>
-											<div class="dropdown-content">
-												<a href="#">삭제</a><br>
-												<a href="#">위로</a><br>
-												<a href="#">아래로</a><br>
-												<a href="#">항목reset</a><br>
+											<div class="dropdown-menu">
+												<a class="dropdown-item" href="#">Delete</a>
+												<a class="dropdown-item" href="#">Up</a>
+												<a class="dropdown-item" href="#">Down</a>
+												<a class="dropdown-item" href="#">Clear</a>
 											</div>
 										</div>
 									</td>
