@@ -1,0 +1,6 @@
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+	}
+}
+rootProject.name = 'SpringBoot-Bootstrap4-NaDongBin-01'
