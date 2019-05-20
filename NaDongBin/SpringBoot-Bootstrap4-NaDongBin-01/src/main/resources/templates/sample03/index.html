@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<!--
-	References:
-	http://bootstrapk.com/                                     -- CSS
-	https://mdbootstrap.com/docs/jquery/navigation/navbar/     -- Navbar
+<!-- 
+	References
 -->
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bootstrap sample02</title>
-	<link rel="stylesheet" href="/css/bootstrap.css">
-	<link rel="stylesheet" href="/css/codingBooster2.css">
-	<!-- style -->
-	<style type="text/css">
-		.jumbotron {
-			background-image: url('/images/jumbotronBackground.jpg');
-			background-size: cover;
-			text-shadow: black 0.2em 0.2em 0.2em;
-			color: white;
-		}
-	</style>
+	<title>Bootstrap sample-03</title>
 </head>
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/codingBooster3.css">
+<!-- style -->
+<style type="text/css">
+	.jumbotron {
+		background-image: url('/images/jumbotronBackground.jpg');
+		background-size: cover;
+		text-shadow: black 0.2em 0.2em 0.2em;
+		color: white;
+	}
+</style>
 <body>
-<!-- body style="height: 1500px;" -->
 	<!-- navigation -->
 	<nav class="navbar navbar-default">
-	<!-- nav class="navbar navbar-default navbar-fixed-top" -->
-	<!-- nav class="navbar navbar-inverse navbar-fixed-top" -->
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button class="navbar-toggle collapsed" type="button" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" aria-expanded="false">
@@ -36,23 +31,21 @@
 				</button>
 				<a class="navbar-brand" href="#">TOS</a>
 			</div>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
 				<!-- navbar menu -->
 				<ul class="nav navbar-nav">
 					<li><a href="#">소개</a></li>
 					<li><a href="#">강사진</a></li>
-					<!-- li><a href="#">강의</a></li -->
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">강의<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">HTML5</a></li>
-							<li><a href="#">CSS</a></li>
+							<li><a href="#">CSS3</a></li>
 							<li class="divider"></li>
 							<li><a href="#">JQuery</a></li>
 						</ul>
 					</li>
 				</ul>
-				
 				<!-- search -->
 				<form class="navbar-form navbar-left">
 					<div class="form-group">
@@ -74,8 +67,8 @@
 			</div>
 		</div>
 	</nav>
-
-	<!-- body -->
+	
+	<!-- container 1 -->
 	<div class="container">
 		<!-- jumbotron -->
 		<div class="jumbotron">
@@ -83,7 +76,8 @@
 			<p class="text-center">코딩 부스터는 IT 교육 사이트입니다. 다양한 IT 관련 무료 유료 강의가 존재합니다.</p>
 			<p class="text-center"><a class="btn btn-primary btn-lg" role="button" href="#">강의 들으러 가기</a></p>
 		</div>
-		<!-- row -->
+		
+		<!-- modal -->
 		<div class="row">
 			<div class="col-sm-4">
 				<h4>코딩 부스터의 특징</h4>
@@ -93,6 +87,7 @@
 			<div class="col-sm-4">
 				<h4>폭 넓은 강사진</h4>
 				<p>크딩 부스터는 다른 사이트만 지원이 다른 깔끔한 구성을 보여줍니다. 모든 페이지가 사용자가 접근하고 읽기 쉽도록 정교하게 구성됩니다. 많은 강의를 들으세요.</p>
+				<p>크딩 부스터는 다른 사이트만 지원이 다른 깔끔한 구성을 보여줍니다. 모든 페이지가 사용자가 접근하고 읽기 쉽도록 정교하게 구성됩니다. 많은 강의를 들으세요.</p>
 				<p><a class="btn btn-default" data-target="#modal2" data-toggle="modal" href="#">자세히 알아보기</a></p>
 			</div>
 			<div class="col-sm-4">
@@ -101,50 +96,9 @@
 				<p><a class="btn btn-default" href="javascript:alert('핵심적인 강의');">자세히 알아보기</a></p>
 			</div>
 		</div>
+		
 		<!-- panel -->
-		<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h3 class="panel-title"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;최신 강의 목록</h3>
-			</div>
-			<div class="panel-body">
-				<div class="media">
-					<div class="media-left">
-						<a href="#"><img class="media-object" src="/images/CAN.jpg" style="width:100px;" alt="강의 이미지"></a>
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading"><a href="#">언어 기초 프로그래밍 강좌</a>&nbsp;<span class="badge">New</span></h4>
-						언어 강의는 기초 프로그래밍 강의ㅣㅂ니다. ㅓ음 프로그램을 접하는 입뭄자가 듣기에 적합한 강의입니다.
-						강의로는 무료이며 언어 기초 프로그래밍 강좌는 총 20간으로 구성됩니다.
-					</div>
-				</div>
-				<hr>
-				<div class="media">
-					<div class="media-left">
-						<a href="#"><img class="media-object" src="/images/PNG.jpg" style="width:100px;" alt="강의 이미지"></a>
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading"><a href="#">Java 언어 기초 프로그래밍 강좌</a>&nbsp;<span class="badge">New</span></h4>
-						언어 강의는 기초 프로그래밍 강의ㅣㅂ니다. ㅓ음 프로그램을 접하는 입뭄자가 듣기에 적합한 강의입니다.
-						강의로는 무료이며 언어 기초 프로그래밍 강좌는 총 20간으로 구성됩니다.<br>
-						언어 강의는 기초 프로그래밍 강의ㅣㅂ니다. ㅓ음 프로그램을 접하는 입뭄자가 듣기에 적합한 강의입니다.
-						강의로는 무료이며 언어 기초 프로그래밍 강좌는 총 20간으로 구성됩니다.<br>
-						언어 강의는 기초 프로그래밍 강의ㅣㅂ니다. ㅓ음 프로그램을 접하는 입뭄자가 듣기에 적합한 강의입니다.
-						강의로는 무료이며 언어 기초 프로그래밍 강좌는 총 20간으로 구성됩니다.
-					</div>
-				</div>
-				<hr>
-				<div class="media">
-					<div class="media-left">
-						<a href="#"><img class="media-object" src="/images/SQL.jpg" style="width:100px;" alt="강의 이미지"></a>
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading"><a href="#">Android 언어 기초 프로그래밍 강좌</a>&nbsp;<span class="badge">New</span></h4>
-						언어 강의는 기초 프로그래밍 강의ㅣㅂ니다. ㅓ음 프로그램을 접하는 입뭄자가 듣기에 적합한 강의입니다.
-						강의로는 무료이며 언어 기초 프로그래밍 강좌는 총 20간으로 구성됩니다.
-					</div>
-				</div>
-			</div>
-		</div>
+		
 	</div>
 	
 	<!-- footer -->
@@ -154,8 +108,7 @@
 			<div class="row">
 				<div class="col-sm-2" style="text-align: center;">
 					<h6>
-					Copyright &copy; 2019
-					TAIN Inc.
+						Copyright &copy; 2019 TAIN Inc.
 					</h6>
 				</div>
 				<div class="col-sm-4">
@@ -187,25 +140,25 @@
 	
 	<!-- modal -->
 	<div class="row">
-		<div class="modal" id="modal1" tabindex="-1">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						코딩 부스터의 특징<button class="close" data-dismiss="modal">&times;</button>
-					</div>
-					<div class="modal-body" style="text-align: center;">
-						저희 서비스의 특징은 바로 강의를 들을 수 있다는 점입니다.<br>
-						특히 다양한 무료 강의가 유튜브와 연동되어 제공됩니다.<br><br>
-						<img src="/images/LEGO_Logo.jpg" id="imagepreview" style="width:250px; height:250px;">
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="modal" id="modal2" tabindex="-1">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						폭넓은 강사진<button class="close" data-dismiss="modal">&times;</button>
+						폭넓은 강사진임<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body" style="text-align: center;">
+						저희 서비스의 특징은 바로 강의를 들을 수 있다는 점입니다.<br>
+						특히 다양한 무료 강의가 유튜브와 연동되어 제공됩니다.<br><br>
+						<img src="/images/JPG-logo-highres.jpg" id="imagepreview" style="width:250px; height:250px;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="modal1" tabindex="-1">
+			<div class="modal-dailog">
+				<div class="modal-content">
+					<div class="modal-header">
+						코딩부스터의 특징<button class="close" data-dismiss="modal">&times;</button>
 					</div>
 					<div class="modal-body" style="text-align: center;">
 						저희 서비스의 특징은 바로 강의를 들을 수 있다는 점입니다.<br>
@@ -217,9 +170,9 @@
 		</div>
 	</div>
 	
-	<!-- script -->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="/js/bootstrap.js"></script>
+	
 </body>
+<!-- script -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="/js/bootstrap.js"></script>
 </html>
-                                                                                                                                                                                                         
