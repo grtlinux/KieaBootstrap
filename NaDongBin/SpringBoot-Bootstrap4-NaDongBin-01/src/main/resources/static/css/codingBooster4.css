@@ -1,0 +1,72 @@
+/* import */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* font */
+* {
+	font-family: 'Nanum Gothic';
+}
+
+/* anckers */
+a {
+	color: gray;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: gray;
+	text-decoration: none;
+	cursor: point;
+}
+
+/* ----------------------------------*/
+/* navbar-default */
+.navbar-default {
+	background-color: #2b3486;
+	border-color: #2b3486;
+}
+
+/* navbar-default navbar-brand */
+.navbar-default .navbar-brand {
+	color: lightgray;
+}
+/* navbar-default navbar-nav li a */
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: lightgray;
+}
+
+
+/* dropdown-menu */
+.dropdown-menu > li > a,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+	color: gray;
+}
+
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: lightgray;
+	}
+}
+
+
+/* ----------------------------------*/
+.footer-default {
+	background-color: #2b3486;
+	color: lightgray;
+}
+
+.footer-default .col-sm-2 {
+	text-align: center;
+}
+
+
+
+
+
+
+
