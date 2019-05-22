@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap 3 - Sample 03</title>
+</head>
+<!-- style -->
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/codingBooster4.css">
+<body>
+	<!-- navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/sample04/">TOS</a>
+			</div>
+			<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+				<!-- navbar menu -->
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="/sample04/">소개</a></li>
+					<li><a href="/sample04/instructor">강사진</a></li>
+					<!-- li><a href="#">강의</a></li -->
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">강의<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/sample04/lecture?lectureName=HTML5');"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;HTML5</a></li>
+							<li><a href="/sample04/lecture?lectureName=CSS3');"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;CSS3</a></li>
+							<li class="divider"></li>
+							<li><a href="/sample04/lecture?lectureName=JQuery');"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;JQuery</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<!-- contect menu -->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span><span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/sample04/loginForm"><span class="glyphicon glyphicon-log-in"></span>&nbsp;로그인</a></li>
+							<li><a href="/sample04/registerForm"><span class="glyphicon glyphicon-edit"></span>&nbsp;회원등록</a></li>
+							<li><a href="javascript:alert('Log out');"><span class="glyphicon glyphicon-log-out"></span>&nbsp;로그아웃</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<!-- search -->
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input class="forn-control" type="text" placeholder="검색내용을 입력하세요.">
+					</div>
+					<button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+				</form>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- gap -->
+	<div style="height:70px;"></div>
+	
+	<!-- container -->
+	<div class="container">
+		<!-- list-group -->
+		<div class="row">
+			<p>강의 내용</p>
+			<div class="list-group">
+				<a class="list-group-item active" href="#">1강 Hello world!!!</a>
+				<a class="list-group-item" href="#">2강 변수와 상수</a>
+				<a class="list-group-item" href="#">3강 데이터 타입</a>
+				<a class="list-group-item" href="#">4강 연산자</a>
+				<a class="list-group-item" href="#">5강 조건문과 반복문</a>
+			</div>
+		</div>
+		<hr>
+		
+		<!-- video -->
+		<div class="row">
+			<p>Video 강의</p>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q4tfF3UGaQg"></iframe>
+			</div>
+		</div>
+		<hr>
+		
+		<!-- pre -->
+		<div class="row">
+			<p>첫번째 강의는 언어 개발 환경을 실치한 이후에 "Hello workd"를 출력해보는 시간을 가집니다.</p>
+			<pre class="pre-scrollable">
+#include &lt;stdio.h&gt;
+
+int main(void)
+{
+	printf("Hello, world!!!\n");
+}
+			</pre>
+		</div>
+		<hr>
+	</div>
+	
+	<!-- commentContent -->
+	<div class="container">
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label>댓글:</label>
+				<textarea rows="5" class="form-control" id="commentContent" name="commentContent"></textarea>
+				<br>
+				<button class="btn pull-right" type="submit">등록</button>
+			</div>
+		</form>
+	</div>
+	
+	<!-- footer -->
+	<footer class="footer-default">
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>
+						Copyright &copy; 2019 TAIN Inc.
+					</h6>
+				</div>
+				<div class="col-sm-4">
+					<h5>대표자 소개</h5>
+					<p>저는 코딩 부스터의 대표 입니다. 코딩에 대한 자료를 정리하고 있습니다.</p>
+				</div>
+				<div class="col-sm-2">
+					<h5>네비게이션</h5>
+					<div class="list-group">
+						<a href="/sample04/" class="list-group-item">소개</a>
+						<a href="/sample04/instructor" class="list-group-item">강사진</a>
+						<a href="/sample04/lecture" class="list-group-item">강의</a>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<h5>SNS</h5>
+					<div class="list-group">
+						<a href="javascript:fn_console('facebook');" class="list-group-item">facebook</a>
+						<a href="javascript:fn_console('YouTube');" class="list-group-item">YouTube</a>
+						<a href="javascript:fn_console('Naver');" class="list-group-item">Naver</a>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<h5><span class="glyphicon glyphicon-ok"></span>&nbsp;by TAIN Inc.</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+</body>
+<!-- script -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script type="text/javascript">
+$(function() {
+	if (true) console.log("$(function(){});")
+});
+$(document).ready(function() {
+	if (true) console.log("$(document).ready(function(){});");
+});
+function fn_console(msg) {
+	if (true) console.log('>>>>> ' + msg);
+}
+</script>
+</html>
