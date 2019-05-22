@@ -8,11 +8,10 @@
 	font-family: 'Nanum Gothic';
 }
 a {
-	color: white;
+	color: #bbbbbb;
 	text-decoration: none;
 }
-a:hover,
-a:focus {
+a:hover {
 	color: #bbbbbb;
 	text-decoration: none;
 	cursor: pointer;
@@ -67,6 +66,7 @@ a:focus {
 	color: #666666;
 	text-decoration: none;
 }
+
 
 
 
