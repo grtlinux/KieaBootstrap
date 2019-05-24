@@ -10,7 +10,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		//registry.addViewController("/").setViewName("index");
-		registry.addViewController("/").setViewName("sample04/index");
+		registry.addViewController("/").setViewName("sample05/index");
 		registry.addViewController("/home").setViewName("home");
 
 		addViewControllersTemp01(registry);
@@ -18,6 +18,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		addViewControllersSample02(registry);
 		addViewControllersSample03(registry);
 		addViewControllersSample04(registry);
+		addViewControllersSample05(registry);
 	}
 	
 	private void addViewControllersTemp01(ViewControllerRegistry registry) {
@@ -55,5 +56,13 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		registry.addViewController("/sample04/lecture").setViewName("sample04/lecture");
 		registry.addViewController("/sample04/loginForm").setViewName("sample04/loginForm");
 		registry.addViewController("/sample04/registerForm").setViewName("sample04/registerForm");
+	}
+
+	private void addViewControllersSample05(ViewControllerRegistry registry) {
+		registry.addViewController("/sample05/").setViewName("sample05/index");
+		registry.addViewController("/sample05/instructor").setViewName("sample05/instructor");
+		registry.addViewController("/sample05/lecture").setViewName("sample05/lecture");
+		registry.addViewController("/sample05/loginForm").setViewName("sample05/loginForm");
+		registry.addViewController("/sample05/registerForm").setViewName("sample05/registerForm");
 	}
 }
