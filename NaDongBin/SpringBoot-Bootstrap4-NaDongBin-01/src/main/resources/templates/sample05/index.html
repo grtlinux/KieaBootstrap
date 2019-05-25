@@ -26,9 +26,22 @@
 				<!-- navbar menu -->
 				<ul class="nav navbar-nav navbar-left">
 					<li><a href="/sample05/">소개</a></li>
-					<li><a href="#">강사진</a></li>
-					<li><a href="#">강의</a></li>
+					<li><a href="/sample05/instructor">강사진</a></li>
+					<!-- li><a href="#">강의</a></li -->
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">강의<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/sample05/lecture?lectureName=HTML5"><span class="glyphicon glyphicon-list-all"></span>&nbsp;HTML5</a></li>
+							<li><a href="/sample05/lecture?lectureName=CSS3"><span class="glyphicon glyphicon-list-all"></span>&nbsp;CSS3</a></li>
+							<li class="divider"></li>
+							<li><a href="/sample05/lecture?lectureName=JQuery"><span class="glyphicon glyphicon-list-all"></span>&nbsp;JQuery</a></li>
+						</ul>
+					</li>
 				</ul>
+				
+				<!-- login menu -->
+				
+				<!-- search menu -->
 			</div>
 		</div>
 	</nav>
