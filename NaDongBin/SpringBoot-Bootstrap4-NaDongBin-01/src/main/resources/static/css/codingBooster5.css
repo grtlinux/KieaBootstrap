@@ -49,6 +49,9 @@ a:focus {
 	color: lightgray;
 }
 
+.footer-default .col-center {
+	text-align: center;
+}
 
 
 
