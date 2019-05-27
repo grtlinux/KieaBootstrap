@@ -19,6 +19,10 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		addViewControllersSample03(registry);
 		addViewControllersSample04(registry);
 		addViewControllersSample05(registry);
+		addViewControllersSample06(registry);
+		addViewControllersSample07(registry);
+		addViewControllersSample08(registry);
+		addViewControllersSample09(registry);
 	}
 	
 	private void addViewControllersTemp01(ViewControllerRegistry registry) {
@@ -64,5 +68,37 @@ public class WebMvcConfig implements WebMvcConfigurer {
 		registry.addViewController("/sample05/lecture").setViewName("sample05/lecture");
 		registry.addViewController("/sample05/loginForm").setViewName("sample05/loginForm");
 		registry.addViewController("/sample05/registerForm").setViewName("sample05/registerForm");
+	}
+
+	private void addViewControllersSample06(ViewControllerRegistry registry) {
+		registry.addViewController("/sample06/").setViewName("sample06/index");
+		registry.addViewController("/sample06/instructor").setViewName("sample06/instructor");
+		registry.addViewController("/sample06/lecture").setViewName("sample06/lecture");
+		registry.addViewController("/sample06/loginForm").setViewName("sample06/loginForm");
+		registry.addViewController("/sample06/registerForm").setViewName("sample06/registerForm");
+	}
+
+	private void addViewControllersSample07(ViewControllerRegistry registry) {
+		registry.addViewController("/sample07/").setViewName("sample07/index");
+		registry.addViewController("/sample07/instructor").setViewName("sample07/instructor");
+		registry.addViewController("/sample07/lecture").setViewName("sample07/lecture");
+		registry.addViewController("/sample07/loginForm").setViewName("sample07/loginForm");
+		registry.addViewController("/sample07/registerForm").setViewName("sample07/registerForm");
+	}
+
+	private void addViewControllersSample08(ViewControllerRegistry registry) {
+		registry.addViewController("/sample08/").setViewName("sample08/index");
+		registry.addViewController("/sample08/instructor").setViewName("sample08/instructor");
+		registry.addViewController("/sample08/lecture").setViewName("sample08/lecture");
+		registry.addViewController("/sample08/loginForm").setViewName("sample08/loginForm");
+		registry.addViewController("/sample08/registerForm").setViewName("sample08/registerForm");
+	}
+
+	private void addViewControllersSample09(ViewControllerRegistry registry) {
+		registry.addViewController("/sample09/").setViewName("sample09/index");
+		registry.addViewController("/sample09/instructor").setViewName("sample09/instructor");
+		registry.addViewController("/sample09/lecture").setViewName("sample09/lecture");
+		registry.addViewController("/sample09/loginForm").setViewName("sample09/loginForm");
+		registry.addViewController("/sample09/registerForm").setViewName("sample09/registerForm");
 	}
 }
