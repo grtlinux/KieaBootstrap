@@ -252,9 +252,32 @@ $(function() {
 });
 $(document).ready(function() {
 	if (true) console.log("$(document).ready(function(){});");
+	
+	if (isEmpty(" ")) {
+		console.log(">>>>> isEmpty is true");
+	} else {
+		console.log(">>>>> isEmpty is false");
+	}
+	
+	str = "   hello    world    ";
+	str = $.trim(str);
+	console.log(">>>>> [" + str + "]");
+	str = "hello....";
+	if (str.indexOf(' ') < 0 && str.indexOf('\t') < 0) {
+		console.log(">>>>> str doesn't contain any white spaces.[" + str + "]");
+	} else {
+		console.log(">>>>> str contains any white spaces.[" + str + "]");
+	}
 });
 function fn_console(msg) {
 	if (true) console.log(">>>>> " + msg);
+}
+function isEmpty(value) {
+	if( value == "" || value == null || value == undefined || ( value != null && typeof value == "object" && !Object.keys(value).length ) ){
+		return true;
+	} else {
+		return false;
+	}
 }
 </script>
 </html>
